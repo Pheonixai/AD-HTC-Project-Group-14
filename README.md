@@ -18,62 +18,30 @@ T-H (Enthalpy-Temperature) Graphing — Visual steam cycle monitoring that enfor
 
 
 **System Architecture**
----
-
 Thermodynamic Process Stages
-StageProcessDescriptionABiogas GenerationCalculates biomass maturity duration and total biogas flow rate from dry mass inputs and methane yield metricsBIsentropic CompressionModels ambient air pressurization and the temperature rise preceding combustionCFuel-Enhanced CombustionEvaluates thermal boost from injecting biogas and HTC volatiles into the combustion chamberDTurbine Expansion & ExhaustMeasures mechanical power from gas expansion and tracks exhaust temperature (T₄) recycled to the HTC boilerNetPower OutputComputes final electrical yield after subtracting parasitic loads (compression, auxiliary systems)
+---
+A. Biogas Generation - Calculates biomass maturity duration and total biogas flow rate from dry mass inputs and methane yield metrics
+B. Isentropic Compression - Models ambient air pressurization and the temperature rise preceding combustion
+C. Fuel-Enhanced Combustion - Evaluates thermal boost from injecting biogas and HTC volatiles into the combustion chamber
+D. Turbine Expansion & Exhaust - Measures mechanical power from gas expansion and tracks exhaust temperature (T₄) recycled to the HTC boiler
+Net Power Output - Computes final electrical yield after subtracting parasitic loads (compression, auxiliary systems)
 
 System Outputs
 ---
 
 ⚡ Electricity — Net power output from the gas turbine cycle
+
 🔥 Biogas — Usable biomethane from anaerobic digestion
+
 🪨 Bio-Coal (Hydrochar) — Solid carbon-rich fuel from HTC, suitable for further combustion or soil amendment
 
 
-Strategic Advantages
+
+**Installation**
 ---
-
-Thermal Independence — Exhaust heat recycling eliminates external energy inputs for the HTC reactor
-Carbon-Neutral Operation — Closed-loop biomass cycle with no net fossil CO₂ emissions
-Waste Valorization — Converts low-value organic waste into three high-value outputs
-Dispatchable Power — Unlike intermittent solar/wind, output is controllable and on-demand
-GHG Mitigation — Prevents methane venting from unmanaged waste decomposition
-
-
-**Getting Started**
----
-Prerequisites
-
-List your runtime requirements here (e.g., Python 3.10+, Node.js, specific libraries).
-
-bash# Example
-pip install -r requirements.txt
-Installation
-bashgit clone https://github.com/your-username/ad-htc-simulator.git
-cd ad-htc-simulator
-# Add setup steps here
-Running the Application
-bash# Add your launch command here
-python main.py
-
-**Roadmap**
----
-
- Dynamic biomass composition inputs (multi-feedstock support)
- Economic modeling module (LCOE, ROI analysis)
- Integration with real-world plant sensor data (SCADA/IoT)
- Export simulation results to PDF/CSV
- Multi-scenario batch simulation
-
-
-**Use Cases**
----
-
-Engineering Design — Size and optimize components for real bioenergy plant projects
-Research & Academia — Validate thermodynamic models and explore system configurations
-Policy Analysis — Assess techno-economic viability of waste-to-energy deployments
-
+bashgit clone https://github.com/Pheonixai/AD-HTC-PROJECT-GROUP-14-MEG-315.git
+cd 315 COURSE PROJECT
+ Run the index.html
 
 **License**
 ---
