@@ -1,4 +1,3 @@
----
 **AD-HTC Fuel-Enhanced Power Gas Cycle Simulator**
 ---
 A thermodynamic simulation tool for modeling closed-loop waste-to-energy systems integrating Anaerobic Digestion (AD) and Hydrothermal Carbonization (HTC).
