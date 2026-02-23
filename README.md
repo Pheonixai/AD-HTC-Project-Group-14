@@ -18,28 +18,7 @@ T-H (Enthalpy-Temperature) Graphing — Visual steam cycle monitoring that enfor
 
 
 **System Architecture**
-----
-Organic Waste (Biomass)
-        │
-        ▼
-┌───────────────┐     Biogas     ┌─────────────────────┐
-│  Anaerobic    │───────────────▶│                     │
-│  Digestion    │                │  Combustion Chamber │
-│  (AD)         │                │  (Biogas + HTC      │
-└───────────────┘                │   Volatiles)        │
-                                 └──────────┬──────────┘
-┌───────────────┐   HTC Volatiles           │
-│  HTC Reactor  │───────────────────────────┘
-│  (180°C)      │◀──────────────────────────────────┐
-└───────────────┘    Exhaust Heat Recycled (>400°C) │
-        │                                           │
-        ▼                                  ┌────────┴───────┐
-   Bio-Coal Output                         │  Gas Turbine   │
-                                           │  (Expansion)   │
-                                 ┌─────────┴────────────────┘
-                                 │
-                                 ▼
-                          Net Electrical Output
+---
 
 Thermodynamic Process Stages
 StageProcessDescriptionABiogas GenerationCalculates biomass maturity duration and total biogas flow rate from dry mass inputs and methane yield metricsBIsentropic CompressionModels ambient air pressurization and the temperature rise preceding combustionCFuel-Enhanced CombustionEvaluates thermal boost from injecting biogas and HTC volatiles into the combustion chamberDTurbine Expansion & ExhaustMeasures mechanical power from gas expansion and tracks exhaust temperature (T₄) recycled to the HTC boilerNetPower OutputComputes final electrical yield after subtracting parasitic loads (compression, auxiliary systems)
